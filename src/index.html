@@ -5,11 +5,23 @@
     <!-- PON UN FAVICON!!! -->
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
     <!-- CAMBIA EL TITLE!!! -->
     <title>Vite Template</title>
   </head>
   <body>
-    <h1>Hola</h1>
+    <main class="main">
+      <div class="card">
+        <h2 class="card__advice">ADVICE #<span class="card__number" id="advice-number"></span></h2>
+        <h1 class="card__text" id="card-text"></h1>
+        <img src="./assets/images/pattern-divider-mobile.svg" alt="" class="card__divider">
+        <div class="card__icon" id="btn">
+          <img src="./assets/images/icon-dice.svg" alt="" class="card__img">
+        </div>
+      </div>
+    </main>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>

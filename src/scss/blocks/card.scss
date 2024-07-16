@@ -1,0 +1,49 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 343px;
+    height: 315px;
+    margin-top: 4rem;
+    border-radius: 10px;
+    background-color: #313A48;
+
+    &__advice {
+        margin: 0;
+        margin-bottom: 24px;
+        margin-top: 40px;
+        font-family: "Manrope", sans-serif;
+        font-size: 11px;
+        letter-spacing: 3.457px;
+        color: #53FFAA;
+    }
+
+    &__text {
+        width: 295px;
+        margin: 0;
+        margin-bottom: 24px;
+        font-size: 24px;
+        letter-spacing: -0.257px;
+        color: #CEE3E9;
+    }
+
+    &__divider {
+        margin-bottom: 64px;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 283px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 64px;
+        height: 64px;
+        padding: 1rem;
+        border-radius: 50%;
+        background-color: #53FFAA;
+    }
+}
