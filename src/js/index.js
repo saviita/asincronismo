@@ -10,9 +10,9 @@ const generateText = data => {
     adviceElement.textContent = data.slip.id  
 }
 
-const getUsers = async url => {
+const getAdvice = async () => {
     try {
-        const response = await fetch(url)
+        const response = await fetch('https://api.adviceslip.com/advice')
         const data = await response.json()
         console.log(data)
         generateText(data)
@@ -21,6 +21,4 @@ const getUsers = async url => {
     }
 }
 
-buttonElement.addEventListener('click', () => {
-    getUsers('https://api.adviceslip.com/advice')
-})
+buttonElement.addEventListener('click', getAdvice)
